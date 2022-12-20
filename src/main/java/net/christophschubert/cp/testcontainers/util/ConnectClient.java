@@ -61,6 +61,7 @@ public class ConnectClient {
             logger.info("successfully started connector {}", config.name);
         } else {
             logger.error("Failed to start connector '{}'", config.name);
+            logger.error("Response: " + response.toString());
         }
     }
 }
